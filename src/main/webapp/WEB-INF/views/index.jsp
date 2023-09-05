@@ -4,7 +4,7 @@
     <title>Site</title>
 </head>
 
-<body style="background-color: gold">
+<body style="background-color: goldenrod">
     <div style="text-align: center">
 <%--    <img src="https://yt3.googleusercontent.com/ytc/AOPolaQQRKSqDbrgnIoqm5Ew6tIOQQ2VqyZdm3zcTqsr=s900-c-k-c0x00ffffff-no-rj"--%>
 <%--         style="width: 150px; height: 150px;"/>--%>

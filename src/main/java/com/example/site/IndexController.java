@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
 
+    @GetMapping("/login")
+    public String Login(){
+        return "login";
+    }
+
     @GetMapping("/index")
     public String hello(){
         return "index";
     }
+
 
 }

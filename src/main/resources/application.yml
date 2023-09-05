@@ -7,8 +7,11 @@ server:
       enabled: true
       force: true
 
+
+
 spring:
   mvc:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+    static-path-pattern: /resources/**
