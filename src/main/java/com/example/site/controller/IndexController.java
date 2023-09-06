@@ -1,4 +1,4 @@
-package com.example.site;
+package com.example.site.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,7 @@ public class IndexController {
 
     @GetMapping("/login")
     public String Login(){
-        return "login";
+        return "loginForm";
     }
 
     @GetMapping("/index")
