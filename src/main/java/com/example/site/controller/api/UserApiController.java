@@ -19,7 +19,18 @@ public class UserApiController {
     @PostMapping("/api/user")
     public String save(@RequestBody User user){
         System.out.println("UserApiController: save호출됨");
+//        System.out.println("username"+username);
+        System.out.println("");
         return "UserApiController: save호출됨";
+    }
+
+    @PostMapping("/api/test")
+    public String join(@RequestBody String username, String password, String email){
+        System.out.println("username"+ username);
+        System.out.println("password"+ password);
+        System.out.println("email"+ email);
+
+        return "회원가입이 완료되었습니다.";
     }
 
 }

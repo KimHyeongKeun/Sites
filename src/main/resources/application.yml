@@ -7,7 +7,14 @@ server:
       enabled: true
       force: true
 
-
+jpa:
+  open-in-view: true
+  hibernate:
+    ddl-auto: create
+    naming:
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardlmpl
+    use-new-id-generator-mapping: false
+    show-sql: true
 
 spring:
   mvc:
