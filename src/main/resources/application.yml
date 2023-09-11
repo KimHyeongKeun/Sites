@@ -7,18 +7,29 @@ server:
       enabled: true
       force: true
 
-jpa:
-  open-in-view: true
-  hibernate:
-    ddl-auto: create
-    naming:
-      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardlmpl
-    use-new-id-generator-mapping: false
-    show-sql: true
-
 spring:
   mvc:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
     static-path-pattern: /resources/**
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+    username: root
+    password: MySQL
+
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mapping: false
+      show-sql: true
+      properties:
+        hibernate.format_sql: true
+
+
+

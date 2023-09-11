@@ -1,8 +1,10 @@
 package com.example.site.service;
 
 
-import com.example.site.model.User;
+//import com.example.site.model.User;
 //import com.example.site.repository.UserRepository;
+//import com.example.site.repository.UserRepository;
+import com.example.site.model.Member;
 //import com.example.site.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,18 +16,17 @@ public class UserService{
 //    @Autowired
 //    private UserRepository userRepository;
 //
-//    private UserRepository b;
-//
-//
-//
+//    @Autowired
+//    private BCryptPasswordEncoder encoder;
 //    @Transactional
-//    public void SignUp(User user) {
-//        b.save(user);
-//    }
+//    public void SignUp(Member member){
+//        String rawPassword = member.getPassword();
+//        String encPassword = encoder.encode(rawPassword);
+//        member.setPassword();
 //
-//    @Transactional
-//    public User SignIn(User user){
-//        return userRepository.findByUsernameAndPassword(user.getUsername(), user.getPassword());
+//        userRepository.save(member);
+//
 //    }
+
 
 }
