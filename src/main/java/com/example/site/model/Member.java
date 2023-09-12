@@ -9,11 +9,14 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Builder
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Builder
+
+
 
 public class Member {
 
