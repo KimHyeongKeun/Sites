@@ -3,6 +3,8 @@ package com.example.site.controller.api;
 
 //import com.example.site.model.User;
 import com.example.site.model.Member;
+import com.example.site.model.RoleType;
+import com.example.site.repository.MemberRepository;
 import com.example.site.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,13 +16,19 @@ public class UserApiController {
     private UserService userService;
 
     @Autowired
-//    private MemberRepository memberRepository;
+    private MemberRepository memberRepository;
+
 
     @PostMapping("/api/user")
     public String save(@RequestBody Member member){
         System.out.println("UserApiController: save호출됨");
 //        System.out.println("username"+username);
         System.out.println("");
+        System.out.println("username: "+member.getUsername() + "email: "+member.getEmail() + "password: "+member.getPassword());
+
+        member.setRole(RoleType.MEMBER);
+        userService.SignUp(member);
+
         return "UserApiController: save호출됨";
     }
 

@@ -15,6 +15,13 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserService{
 
 
+    @Autowired
+    private MemberRepository memberRepository;
+
+    @Transactional
+    public void SignUp(Member member){
+        memberRepository.save(member);
+    }
 //
 //    @Autowired
 //    private BCryptPasswordEncoder encoder;
