@@ -52,6 +52,7 @@ public class UserApiController {
         return "테스트 완료"+member.getUsername()+" "+ member.getPassword();
     }
 
+
     @PostMapping("/Dummy/join")
     public String join(Member member){
 
