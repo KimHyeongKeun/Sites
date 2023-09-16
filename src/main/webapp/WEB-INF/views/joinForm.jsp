@@ -1,9 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%--<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>--%>
+
 
 <%--<%@ include file="../layout/header.jsp" %>--%>
 
 <div class="container">
-    <form action="/user/join" method="POST">
+    <form>
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" class="form-control" placeholder="Enter username" id="username">
@@ -23,9 +25,7 @@
 
 </div>
 
-<%--<script src="/site/js/user.js"></script>--%>
-<script src="/Site/js/user.js"></script>
-<%--<%@ include file="../layout/footer.jsp" %>--%>
+<script type="text/javascript" src="${pageContext.request.contextPath}/Site/js/user.js"></script>
 
 
 
