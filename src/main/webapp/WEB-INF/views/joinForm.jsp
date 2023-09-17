@@ -25,7 +25,7 @@
 
 </div>
 
-<script type="text/javascript" src="${pageContext.request.contextPath}/Site/js/user.js"></script>
+<script type="text/javascript" src="/Site/user.js"></script>
 
 
 
